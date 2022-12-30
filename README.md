@@ -6,6 +6,7 @@ A simple todo app.
 >   - electron
 >   - express
 >   - graphql
+>   - mongoose
 
 ## Setup
 
