@@ -1,0 +1,93 @@
+query Activities {
+  activities {
+    _id
+    index
+    description
+    completed
+  }
+}
+
+query Activity($activityId: ID!) {
+  activity(activityId: $activityId) {
+    _id
+    index
+    description
+    completed
+  }
+}
+
+mutation CreateActivity($createActivityInput: CreateActivityInput!) {
+  createActivity(input: $createActivityInput) {
+    success
+    message
+    activity {
+      _id
+      index
+      description
+      completed
+    }
+  }
+}
+
+mutation UpdateActivity($activityId: ID!, $updateActivityInput: UpdateActivityInput!) {
+  updateActivity(activityId: $activityId, input: $updateActivityInput) {
+    success
+    message
+    activity {
+      _id
+      index
+      description
+      completed
+    }
+  }
+}
+
+mutation SwapActivityIndexes($indexA: Int!, $indexB: Int!) {
+  swapActivityIndexes(indexA: $indexA, indexB: $indexB) {
+    success
+    message
+    activities {
+      _id
+      index
+      description
+      completed
+    }
+  }
+}
+
+mutation CompressActivityIndexes {
+  compressActivityIndexes {
+    success
+    message
+    activities {
+      _id
+      index
+      description
+      completed
+    }
+  }
+}
+
+mutation DeleteActivities {
+  deleteActivities {
+    success
+    message
+    activity {
+      _id
+      description
+      completed
+    }
+  }
+}
+
+mutation DeleteActivity($activityId: ID!) {
+  deleteActivity(activityId: $activityId) {
+    success
+    message
+    activity {
+      _id
+      description
+      completed
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "env": {
+    "node": true
+  },
+  "extends": [
+    "airbnb-base"
+  ],
+  "rules": {
+    "no-console": "off",
+    "comma-dangle": "off",
+    "no-underscore-dangle": "off",
+    "quotes": ["error", "double"],
+    "func-names": "off",
+    "function-paren-newline": "off",
+    "object-curly-newline": "off",
+    "no-nested-ternary": "off",
+    "global-require": "off",
+    "import/no-extraneous-dependencies":"off",
+    "import/prefer-default-export": "off"
+  }
+}

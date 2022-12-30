@@ -1,0 +1,14 @@
+# exclude
+*
+
+# include
+!releases
+!releases/**
+!src
+!src/**
+!.env
+!.eslintrc.json
+!.gitignore
+!package.json
+!package-lock.json
+!README.md
